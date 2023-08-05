@@ -6,11 +6,11 @@ from web_scraping import scrape_rss_feed
 
 def send_email(to_email, subject, body):
     # Email configuration
-    from_email = 'nht042003@gmail.com'
+    from_email = 'your_email@gmail.com'
     smtp_server = 'smtp.gmail.com'
     smtp_port = 587
-    smtp_username = 'nht042003@gmail.com'
-    smtp_password = 'qjfymkqjajjaprya'  # Generate app password in Gmail settings
+    smtp_username = 'your_email@gmail.com'
+    smtp_password = 'your_app_specific_password'  # Generate app password in Gmail settings
 
     # Create a multipart message
     recipients = to_email.split(',')
@@ -35,7 +35,7 @@ def send_email(to_email, subject, body):
 def send_daily_news_summary():
     # Replace 'recipient1@example.com,recipient2@example.com' with the intended recipients' Gmail addresses separated
     # by commas
-    email_addresses = 'nht042003@gmail.com'
+    email_addresses = 'recipient1@example.com,recipient2@example.com'
     subject = 'Latest Technology News Summary - ' + str(datetime.date.today())
 
     email_body = "<h2>Latest Technology News Summary</h2>"
