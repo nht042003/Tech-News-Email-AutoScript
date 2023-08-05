@@ -13,7 +13,8 @@ if __name__ == "__main__":
         'TechRadar': 'https://www.techradar.com/rss'
     }
 
-    email_addresses = 'nht042003@gmail.com'#,syonlee1@gmail.com'
+    # Replace 'recipient1@example.com,recipient2@example.com' with the intended recipients' Gmail addresses separated by commas
+    email_addresses = 'recipient1@example.com,recipient2@example.com'
     subject = 'Latest Technology News Summary - ' + str(datetime.date.today())
 
     email_body = "<h2>Latest Technology News Summary</h2>"
